@@ -21,8 +21,6 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag node_docker_dictionary:$(date +%s)
+      run: docker build . --file Dockerfile --tag node_docker_dictionary:latest
     - name: Docker Push
-      run: |
-         docker push ${{ secrets.DOCKER_USER }}/node_docker_dictionary:${{ github.sha }}
-         docker push ${{ secrets.DOCKER_USER }}/node_docker_dictionary:latest
+      run: docker push ${{ secrets.DOCKER_USER }}/node_docker_dictionary:latest
