@@ -1,11 +1,7 @@
 ### Node Docker Dictionary
 
-
-Dockerhub image url:
-https://hub.docker.com/r/asalina0402/node_docker_dictionary
-This repo:
-https://github.com/asalina0402/Node_Docker_Dictionary
-
+[DockerHub](https://hub.docker.com/r/asalina0402/node_docker_dictionary)
+[GitHub](https://github.com/asalina0402/Node_Docker_Dictionary)
 
 #### How to run
 Once you have docker desktop installed, open command propmt/terminal and type in following commands
