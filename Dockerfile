@@ -1,5 +1,9 @@
-FROM alpine:3.9
+FROM node:12
 
-ENV NODE_VERSION 12.20.0
+# Create app directory
+WORKDIR /usr/src/app
 
-CMD node index.js
+COPY . .
+
+EXPOSE 8080
+CMD [ "node", "index.js" ]
