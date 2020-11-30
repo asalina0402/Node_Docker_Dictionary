@@ -23,4 +23,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag node-dictionary:$(date +%s)
     - name: Docker Push
-      run: docker push asalina0402/node-dictionary
+      run: docker push ${{secrets.DOCKER_USER}}/node-dictionary
