@@ -39,7 +39,7 @@ const LoadDictionary = (file, callback) => {
 	})
 };
 
-DownloadDictionaryFile('https://raw.githubusercontent.com/adambom/dictionary/master/dictionary.json', 'dictionary.json', (err) => {
+DownloadDictionaryFile('https://raw.githubusercontent.com/asalina0402/Node_Docker_Dictionary/main/dictionary.json', 'dictionary.json', (err) => {
 	if (err) {
 		return console.log(err)
 	}
